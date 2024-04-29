@@ -1,0 +1,53 @@
+.ReadPosts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* This creates a responsive number of columns based on the card's minimum width */
+    gap: 30px; /* Space between cards */
+    justify-content: center; /* This centers the cards in the grid */
+    padding: 20px; /* Padding around the entire grid */
+}
+
+.Card {
+    backdrop-filter: blur(2px);
+    background-color: #949191;
+    border: 1px solid rgba(153, 153, 153, 0.497);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 25px; /* Space below each card */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    /* Remove width: calc(100% - 40px); as the grid now controls the card width */
+    text-align: center;
+    /* Add other styles as necessary */
+}
+.sort-buttons-container {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    padding: 30PX; /* Adds padding above and below the buttons */
+    margin-bottom: 300px; /* Adds space below the sort buttons */
+}
+
+.sort-button {
+    margin:  10px; /* Space between buttons */
+    /* Your existing button styles */
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+
+}
+.Card .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the items vertically */
+  }
+  .Card .content-container p {
+    margin-bottom: 10px; /* Adjust as necessary for space between text and button */
+  }
+  
+  .recipe-button {
+    /* Your button styles */
+  }
+  
+  
